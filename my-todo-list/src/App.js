@@ -10,7 +10,8 @@ function App() {
     setCurrentItem(e.target.value);
   };
   const addItemToList = () => {
-    updateItemList([...itemList, currentItem]);
+    updateItemList([...itemList, { item: currentItem, key: Date.now() }]);
+    setCurrentItem("");
   };
   return (
     <div className="App">
