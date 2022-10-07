@@ -6,7 +6,7 @@ function List(props) {
     <div>
       {props.itemList.map((itemObj) => {
         return (
-          <div className="item">
+          <div className="Item">
             <p>{itemObj.item}</p>
             <button>x</button>
           </div>
