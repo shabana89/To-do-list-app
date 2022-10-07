@@ -22,7 +22,7 @@ function App() {
             <input value={currentItem} onChange={onChangeHandler} />
             <button onClick={addItemToList}>+</button>
           </div>
-          <List itemList={itemList} />
+          <List itemList={itemList} updateItemList={updateItemList} />
         </div>
       </header>
     </div>
