@@ -19,7 +19,11 @@ function App() {
       <header className="App-header">
         <div className="Wrapper">
           <div className="Input-wrapper">
-            <input value={currentItem} onChange={onChangeHandler} />
+            <input
+              placeholder="Add item"
+              value={currentItem}
+              onChange={onChangeHandler}
+            />
             <button onClick={addItemToList}>+</button>
           </div>
           <List itemList={itemList} updateItemList={updateItemList} />
